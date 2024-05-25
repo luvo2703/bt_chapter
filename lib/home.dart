@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:btvd_chapter/chapter4/chapter4.dart';
+import 'package:btvd_chapter/chapter5/chapter5.dart';
 import 'package:btvd_chapter/chapter6/chapter6.dart';
 import 'package:btvd_chapter/chapter7/chapter7.dart';
 import 'package:btvd_chapter/chapter8/chapter8.dart';
 import 'package:btvd_chapter/chapter9/chapter9.dart';
 import 'package:btvd_chapter/chapter10/chapter10.dart';
-// import 'package:btvd_chapter/chapter11/chapter11.dart';
+import 'package:btvd_chapter/chapter11/chapter11.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/gestures.dart';
 
@@ -56,20 +58,25 @@ class Home extends StatelessWidget {
             title: Text('Chương $chapterNumber'),
             onTap: () {
               // Kiểm tra nếu chapterNumber là 4, 5, 6, 7, hoặc 8, điều hướng đến Chapter tương ứng
-              if (chapterNumber == 7) {
+              if (chapterNumber == 4) {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Chapter7()),
+                  MaterialPageRoute(builder: (context) => Chapter4()),
                 );
-              // } else if (chapterNumber == 5) {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Chapter5()),
-              //   );
+              } else if (chapterNumber == 5) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Chapter5()),
+                );
               } else if (chapterNumber == 6) {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Chapter6()),
+                );
+              } else if (chapterNumber == 7) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Chapter7()),
                 );
               } else if (chapterNumber == 8) {
                 Navigator.push(
@@ -86,11 +93,11 @@ class Home extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => Chapter10()),
                 );
-              // } else if (chapterNumber == 11) {
-              //   Navigator.push(
-              //     context,
-              //     MaterialPageRoute(builder: (context) => Chapter11()),
-              //   );
+              } else if (chapterNumber == 11) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Chapter11()),
+                );
               } else {
                 Navigator.push(
                   context,
